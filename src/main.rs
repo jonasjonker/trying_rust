@@ -2,7 +2,7 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 
-fn main() {
+fn choose() {
     println!("Hello, world!");
     
     let my_number = rand::thread_rng().gen_range(1..=100);
@@ -34,4 +34,15 @@ fn main() {
             }
         }
     }
+}
+
+
+fn main() {
+    let ans: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = ans;
+    let a = ans.0;
+    let arr_a = [1,2,3];
+    let arr_b = [3; 5];
+    println!("{:?}", arr_a);
+    println!("{:?}", arr_b);
 }
